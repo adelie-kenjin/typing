@@ -23,12 +23,17 @@ class resultViewController: UIViewController {
     @IBOutlet var keiken:UILabel!
     @IBOutlet var ImageView: UIImageView!
     @IBOutlet var newallcoin:UILabel!
+    @IBOutlet var botan1:UIButton!
+    @IBOutlet var botan2:UIButton!
     
     var userDefaults:UserDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        botan1.layer.cornerRadius = 20 // 角丸のサイズ
+        botan1.layer.masksToBounds = true
+        botan2.layer.cornerRadius = 20 // 角丸のサイズ
+        botan2.layer.masksToBounds = true
         if lose == 0 {
             lose = lose + 1
             userDefaults.set(lose,forKey:"LOSE")

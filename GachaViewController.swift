@@ -12,6 +12,8 @@ import AVFoundation
 class GachaViewController: UIViewController ,AVAudioPlayerDelegate{
 
     @IBOutlet var image:UIImageView!
+    @IBOutlet var botan1:UIButton!
+    
     var userDefaults:UserDefaults = UserDefaults.standard
 
     @IBOutlet var coinlabel:UILabel!
@@ -47,6 +49,8 @@ class GachaViewController: UIViewController ,AVAudioPlayerDelegate{
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        botan1.layer.cornerRadius = 20 // 角丸のサイズ
+        botan1.layer.masksToBounds = true
         
         if userDefaults.object(forKey: "COIN") != nil {
             coin = userDefaults.object(forKey: "COIN") as! Int

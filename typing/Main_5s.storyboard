@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h2S-BX-iPC">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h2S-BX-iPC">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -103,6 +103,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="ガチャ" image="gacha" selectedImage="gacha" id="hV4-I2-rZs"/>
                     <connections>
+                        <outlet property="botan1" destination="X9B-l8-Ugz" id="XNm-gj-RmK"/>
                         <outlet property="coinlabel" destination="7c8-0e-0Tl" id="wqw-39-Xt9"/>
                         <segue destination="n0J-A9-zOc" kind="modal" identifier="toResult" id="gqs-Db-feo"/>
                     </connections>
@@ -297,6 +298,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="アタック" image="Image" selectedImage="Image" id="7YN-1N-w5L"/>
                     <connections>
+                        <outlet property="botan1" destination="C7Q-5D-IA7" id="pj5-ni-uw8"/>
+                        <outlet property="botan2" destination="MH2-hb-DGw" id="nxm-2a-Uj9"/>
                         <outlet property="coinLabel" destination="8h0-xw-JTA" id="XZt-N2-AWA"/>
                         <outlet property="image" destination="cph-xV-26Y" id="JyM-Zr-5dm"/>
                         <outlet property="levelLabel" destination="SuY-et-3xr" id="t97-rU-6om"/>
@@ -451,6 +454,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="バトル" image="sword" selectedImage="sword" id="gar-C2-gj2"/>
                     <connections>
+                        <outlet property="botan1" destination="lAs-RI-OJm" id="7MV-PL-0Zw"/>
+                        <outlet property="botan2" destination="A6C-xj-CDY" id="hmr-rw-Vc9"/>
+                        <outlet property="botan3" destination="Fe8-Zy-R4A" id="8xu-HY-CBC"/>
                         <outlet property="image" destination="iCt-lN-PE8" id="oUe-T2-kb7"/>
                         <outlet property="label" destination="TTI-Ti-8TO" id="uRH-XX-4Pq"/>
                         <segue destination="M1x-rV-vWN" kind="modal" identifier="count" modalTransitionStyle="crossDissolve" id="FME-Er-2cl"/>
@@ -706,6 +712,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="botan1" destination="tla-Go-HyF" id="FPz-6d-RLI"/>
+                        <outlet property="botan2" destination="QWN-CT-K2K" id="0zc-yh-xXm"/>
                         <outlet property="coinLabel" destination="KV6-Tc-vaA" id="TWF-AU-Oj0"/>
                         <outlet property="comento" destination="e4x-8j-KiN" id="1pg-qU-wF6"/>
                         <outlet property="hantei" destination="42q-uk-X73" id="TSE-sk-HS4"/>

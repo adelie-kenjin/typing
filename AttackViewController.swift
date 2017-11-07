@@ -13,6 +13,8 @@ class AttackViewController: UIViewController {
     @IBOutlet var coinLabel:UILabel!
     @IBOutlet var levelLabel:UILabel!
     @IBOutlet var image:UIImageView!
+    @IBOutlet var botan1:UIButton!
+    @IBOutlet var botan2:UIButton!
     
     var userDefaults:UserDefaults = UserDefaults.standard
     
@@ -21,6 +23,10 @@ class AttackViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        botan1.layer.cornerRadius = 20 // 角丸のサイズ
+        botan1.layer.masksToBounds = true
+        botan2.layer.cornerRadius = 20 // 角丸のサイズ
+        botan2.layer.masksToBounds = true
         
         coinLabel.text = String(coin)
         

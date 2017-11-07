@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -103,6 +103,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="ガチャ" image="gacha" selectedImage="gacha" id="dcU-v2-6AN"/>
                     <connections>
+                        <outlet property="botan1" destination="iug-G6-LRT" id="cCW-tL-2ci"/>
                         <outlet property="coinlabel" destination="7Rh-Jf-MWi" id="2Sh-ps-LKJ"/>
                         <segue destination="Yqh-DD-Vos" kind="modal" identifier="toResult" id="Lil-c0-P0n"/>
                     </connections>
@@ -297,6 +298,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="アタック" image="Image" selectedImage="Image" id="Iu7-Uh-57S"/>
                     <connections>
+                        <outlet property="botan1" destination="5wr-Uw-3IY" id="iZS-X8-K07"/>
+                        <outlet property="botan2" destination="FWt-mZ-FTN" id="XXf-4Z-Se8"/>
                         <outlet property="coinLabel" destination="maM-6j-O9A" id="UG3-G4-9sg"/>
                         <outlet property="image" destination="e5d-mn-cFZ" id="8Wz-qJ-txT"/>
                         <outlet property="levelLabel" destination="3s0-ct-JOV" id="IPO-3w-8HE"/>
@@ -451,6 +454,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="バトル" image="sword" selectedImage="sword" id="hmp-HJ-Vnv"/>
                     <connections>
+                        <outlet property="botan1" destination="uWH-ZS-0xI" id="u5p-UW-dGi"/>
+                        <outlet property="botan2" destination="LW6-ld-zb5" id="WBv-ta-Qqf"/>
+                        <outlet property="botan3" destination="ZAg-Lw-4kG" id="WyL-Uh-F3l"/>
                         <outlet property="image" destination="bcs-Al-Ei2" id="e2M-BO-qL6"/>
                         <outlet property="label" destination="ZcV-0K-zRq" id="0D9-tx-DtV"/>
                         <segue destination="he3-eJ-jM3" kind="modal" identifier="count" modalTransitionStyle="crossDissolve" id="fTJ-4Z-7Ye"/>
@@ -629,6 +635,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_8243.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dg5-az-uIY">
+                                <rect key="frame" x="0.0" y="-29" width="322" height="573"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hy-IN-hPz">
                                 <rect key="frame" x="-2" y="96" width="322" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -698,14 +708,12 @@
                                     <segue destination="Ts7-Mt-FON" kind="unwind" unwindAction="unwindToFirstViewWithSegue:" id="PVr-Ph-hX2"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_8243.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dg5-az-uIY">
-                                <rect key="frame" x="0.0" y="-29" width="322" height="573"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="botan1" destination="zbK-5L-C3h" id="RvC-P3-iFr"/>
+                        <outlet property="botan2" destination="4fx-gg-neb" id="ADv-dh-6oH"/>
                         <outlet property="coinLabel" destination="6Kp-48-qLq" id="jv7-Xm-1KV"/>
                         <outlet property="comento" destination="2Hy-IN-hPz" id="MYG-AW-gV0"/>
                         <outlet property="hantei" destination="0Vc-QM-cZb" id="k6T-s2-QWQ"/>

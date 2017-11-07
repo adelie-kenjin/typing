@@ -12,12 +12,22 @@ class ButtleViewController: UIViewController {
     var a:Int = 0
     @IBOutlet var label:UILabel!
     @IBOutlet var image:UIImageView!
+    @IBOutlet var botan1:UIButton!
+    @IBOutlet var botan2:UIButton!
+    @IBOutlet var botan3:UIButton!
+
     
     var userDefaults:UserDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        botan1.layer.cornerRadius = 20 // 角丸のサイズ
+        botan1.layer.masksToBounds = true
+        botan2.layer.cornerRadius = 20 // 角丸のサイズ
+        botan2.layer.masksToBounds = true
+        botan3.layer.cornerRadius = 20 // 角丸のサイズ
+        botan3.layer.masksToBounds = true
+
         if userDefaults.object(forKey: "LEVEL") != nil {
             label.text = String(describing: userDefaults.object(forKey: "LEVEL")!)
         }else {
@@ -55,18 +65,14 @@ class ButtleViewController: UIViewController {
     }
     @IBAction func button1(){
         self.performSegue(withIdentifier: "count", sender: nil)
-        tapButton.layer.cornerRadius = 20.0 //どれくらい丸くするのか
-        tapButton.layer.masksToBounds = true //viewに丸くする許可を出す
+        
     }
     @IBAction func button2(){
         self.performSegue(withIdentifier: "count", sender: nil)
-        tapButton.layer.cornerRadius = 20.0 //どれくらい丸くするのか
-        tapButton.layer.masksToBounds = true //viewに丸くする許可を出す
+      
     }
     @IBAction func button3(){
         self.performSegue(withIdentifier: "count", sender: nil)
-        tapButton.layer.cornerRadius = 20.0 //どれくらい丸くするのか
-        tapButton.layer.masksToBounds = true //viewに丸くする許可を出す
     }
     /*
     // MARK: - Navigation

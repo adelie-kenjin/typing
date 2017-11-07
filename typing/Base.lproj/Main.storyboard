@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aH8-WB-qqf">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aH8-WB-qqf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -149,6 +149,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="ガチャ" image="gacha" selectedImage="gacha" id="gZ9-CT-QHv"/>
                     <connections>
+                        <outlet property="botan1" destination="ceR-Zf-Cwm" id="4yw-o8-xbJ"/>
                         <outlet property="coinlabel" destination="qbU-FU-FpH" id="C5Y-P2-sLf"/>
                         <segue destination="ryC-VG-k1P" kind="modal" identifier="toResult" id="2qK-XN-VZN"/>
                     </connections>
@@ -343,6 +344,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="アタック" image="Image" selectedImage="Image" id="wrp-qa-YCm"/>
                     <connections>
+                        <outlet property="botan1" destination="v9i-KR-6vi" id="3wd-YX-TH1"/>
+                        <outlet property="botan2" destination="iXG-s2-g54" id="UXn-4b-Ocp"/>
                         <outlet property="coinLabel" destination="4Uz-uW-hay" id="0wf-qv-Hsb"/>
                         <outlet property="image" destination="X3q-A9-OHb" id="WPJ-ll-BjT"/>
                         <outlet property="levelLabel" destination="FDA-rv-I4I" id="jQH-EG-PXq"/>
@@ -497,6 +500,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="バトル" image="sword" selectedImage="sword" id="hE6-hA-thk"/>
                     <connections>
+                        <outlet property="botan1" destination="f79-cW-lcP" id="Kkt-wj-yQp"/>
+                        <outlet property="botan2" destination="p09-Ha-gDP" id="gVP-14-qd6"/>
+                        <outlet property="botan3" destination="f5f-N7-bpI" id="ntc-Ku-eIG"/>
                         <outlet property="image" destination="1ae-pl-MRk" id="pWR-nU-GG5"/>
                         <outlet property="label" destination="J07-8w-LLZ" id="Dja-rR-F3E"/>
                         <segue destination="Ngr-1y-fLn" kind="modal" identifier="count" modalTransitionStyle="crossDissolve" id="AU0-bD-W0z"/>
@@ -608,7 +614,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-ox-gfD">
-                                <rect key="frame" x="76" y="40" width="66" height="26"/>
+                                <rect key="frame" x="70" y="20" width="66" height="26"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -752,6 +758,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="botan1" destination="89M-2o-aTG" id="S9I-jg-oiv"/>
+                        <outlet property="botan2" destination="v8O-XR-hpw" id="nqt-om-iuf"/>
                         <outlet property="coinLabel" destination="CUL-gG-M0R" id="zjD-fT-HvX"/>
                         <outlet property="comento" destination="hQ2-II-JfF" id="ek2-Iz-e3y"/>
                         <outlet property="hantei" destination="F1X-T3-40c" id="Yks-cf-Gwq"/>
